@@ -71,6 +71,7 @@ app.get("/extract-tags", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+// Bind to 0.0.0.0 for Render deployment
+app.listen(PORT, "0.0.0.0", () => {
   console.log("Server running on port " + PORT);
 });
